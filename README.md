@@ -1,7 +1,7 @@
 # RL_LDCT: Reinforcement Learning-Based Operator Selection For Low-Dose CT Denoising
 Official PyTorch implementation of the paper **RL-LDCT: Reinforcement Learning-Based Operator Selection for Low-Dose CT Denoising**
 ## Overview
-This repository contains the code to reproduce the deep learning model framework for LDCT denoising. By integrating Reinforcement learning, the agent discovered multiple optimal sequences of heterogeneous operators (Res-Net, Transformers, State-Space/Mamba, GNN, ConvLSTM). Used the NAS_SR_Model found in the [SRIQL: Implicit Q Learning for Ultralight-weight Image Super Resolution](https://github.com/mhadiniknam/SRIQL/blob/main/model.py) GitHub repository, modified the block operators, and integrated a learning rate scheduler. We used the 2016 AAPM Low Dose CT Grand Challenge Dataset with 8 patients used for training and 2 patients for validation and testing.
+This repository contains the code to reproduce the deep learning model framework for LDCT denoising. By integrating Reinforcement learning, the agent discovered multiple optimal sequences of heterogeneous operators (Res-Net, Transformers, State-Space/Mamba, GNN, ConvLSTM). Used the `NAS_SR_Model` found in the [SRIQL: Implicit Q Learning for Ultralight-weight Image Super Resolution](https://github.com/mhadiniknam/SRIQL/blob/main/model.py) GitHub repository, modified the block operators, and integrated a learning rate scheduler. We used the 2016 AAPM Low Dose CT Grand Challenge Dataset with 8 patients used for training and 2 patients for validation and testing.
 
 ## Files
 - `blocks_2.py` & `model.py`: Define our search space operators and develop the suggested model architecture for the reinforcement learning model.
